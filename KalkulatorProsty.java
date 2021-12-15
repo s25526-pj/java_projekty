@@ -10,18 +10,18 @@ public class KalkulatorProsty {
        int liczbaDruga;
        int wynik;
        char znak;
-       Scanner wej = new Scanner(System.in); 
+       Scanner wejscie = new Scanner(System.in); 
        System.out.println("Podaj pierwszą liczbę:"); 
-       liczbaPierwsza = wej.nextInt();
+       liczbaPierwsza = wejscie.nextInt();
        System.out.println("Podaj drugą liczbę:");
-       liczbaDruga = wej.nextInt();
+       liczbaDruga = wejscie.nextInt();
  
        System.out.println("Dodawanie - wpisz +");
        System.out.println("Odejmowanie - wpisz -");
        System.out.println("Mnożenie - wpisz *");
        System.out.println("Dzielenie - wpisz /");
  
-       znak = wej.next().charAt(0);
+       znak = wejscie.next().charAt(0);
        switch(znak)
        {
            case '+' ->
